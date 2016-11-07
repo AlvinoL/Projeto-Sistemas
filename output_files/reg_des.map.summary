@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 07 16:41:50 2016
+Quartus II 32-bit Version : 11.1 Build 173 11/01/2011 SJ Web Edition
+Revision Name : reg_des
+Top-level Entity Name : reg_des
+Family : Cyclone II
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
