@@ -1,0 +1,43 @@
+|reg_des
+ck => q2[0]~reg0.CLK
+ck => q2[1]~reg0.CLK
+ck => q2[2]~reg0.CLK
+ck => q2[3]~reg0.CLK
+ck => q2[4]~reg0.CLK
+ck => q1[0]~reg0.CLK
+ck => q1[1]~reg0.CLK
+ck => q1[2]~reg0.CLK
+ck => q1[3]~reg0.CLK
+ck => q1[4]~reg0.CLK
+ld => q1.OUTPUTSELECT
+ld => q1.OUTPUTSELECT
+ld => q1.OUTPUTSELECT
+ld => q1.OUTPUTSELECT
+ld => q1.OUTPUTSELECT
+ld => q2.OUTPUTSELECT
+ld => q2.OUTPUTSELECT
+ld => q2.OUTPUTSELECT
+ld => q2.OUTPUTSELECT
+ld => q2.OUTPUTSELECT
+d1[0] => q1.DATAB
+d1[1] => q1.DATAB
+d1[2] => q1.DATAB
+d1[3] => q1.DATAB
+d1[4] => q1.DATAB
+d2[0] => q2.DATAB
+d2[1] => q2.DATAB
+d2[2] => q2.DATAB
+d2[3] => q2.DATAB
+d2[4] => q2.DATAB
+q1[0] << q1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q1[1] << q1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q1[2] << q1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q1[3] << q1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q1[4] << q1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2[0] << q2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2[1] << q2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2[2] << q2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2[3] << q2[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2[4] << q2[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

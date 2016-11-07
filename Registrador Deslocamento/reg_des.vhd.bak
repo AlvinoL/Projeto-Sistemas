@@ -1,0 +1,70 @@
+--
+-- Curso de FPGA WR Kits Channel
+--
+--
+-- Aula 57: Registrador de Deslocamento com Carga Síncrona
+--
+--
+-- Kit FPGA EE02-SOQ
+--
+-- Adquira em http://www.professoremersonmartins.com.br/site/prtoducts/KIT-FPGA-%252d-EE02-%252d-SOQ.html
+--
+--
+-- Kit FPGA EE03
+--
+-- Adquira em http://www.professoremersonmartins.com.br/site/products/KIT-FPGA-%252d-EE03.html
+--
+-- Autor: Eng. Wagner Rambo     Data: Julho de 2016
+--
+-- www.wrkits.com.br | facebook.com/wrkits | youtube.com/user/canalwrkits
+--
+
+
+	library ieee ;
+	use ieee.std_logic_1164.all ;
+	use ieee.numeric_std.all;
+	
+	
+	entity reg_des is
+	port(ck, ld      :     in      std_logic;
+	     d1, d2      :     in      unsigned(4 downto 0);
+		  q1, q2      : buffer		 unsigned(4 downto 0));
+	end reg_des;
+	
+	architecture hardware of reg_des is
+	begin
+	  proc1: process(ck)
+	  begin
+	    if rising_edge(ck) then
+		  if ld = '1' then
+		    q1 <= d1;
+			 q2 <= d2;
+		  else
+		    q1(q1 'length-1 downto 0) <= q1(q1'length-2 downto 0) & '0';
+			 q2 <= shift_left(q2,1);
+		  end if;
+		 end if;
+	  end process proc1;
+	end hardware;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
